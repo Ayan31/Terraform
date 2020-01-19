@@ -1,2 +1,2 @@
 # Terraform-Tutorial
-Terraform Tutorial with all the Live Example
+Terraform Tutorial with all the Live Examples.

@@ -3,8 +3,6 @@ resource "aws_instance" "web-server" {
   ami           = "${lookup(var.ami_id, var.region)}"
   instance_type = "t2.micro"
   key_name      = "terraform"
-
-
   provisioner "file" {
     source      = "index.html"
     destination = "/tmp/index.html"
@@ -22,3 +20,4 @@ resource "aws_instance" "web-server" {
       host = "${aws_instance.web-server.public_ip}"
   }
 }
+
